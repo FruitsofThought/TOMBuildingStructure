@@ -9,9 +9,24 @@ items:
     -
       osmkeyvalue: architecture.building_structure.values.coralstone_and_lime
       color: "#3cff7d"
+      samplelocation:
+        title: Kisimamajongoo Sportsclub, NgAmbo
+        lat: -6.16579
+        lon: 39.19799
+        zoom: 19
     -
       osmkeyvalue: architecture.building_structure.values.wattle_and_daub
       color: "#ffd061"
+      samplelocation:
+        title: Classic Swahili Residential House in NgAmbo
+        lat: -6.16872
+        lon: 39.19801
+        zoom: 17
     -
       osmkeyvalue: architecture.building_structure.values.makeshift
       color: "#ca825e"
+      samplelocation:
+        title: Market Stall in NgAmbo
+        lat: -6.16189
+        lon: 39.19904
+        zoom: 18

@@ -1,7 +1,7 @@
 import:
   - ../TOMBaseStyles/TOMDark.yaml
   - ../TOMBaseStyles/TOMArchitecturalLabels.yaml
-  - ../TOMBaseStyles/TOMSourceTZ.yaml
+  - ../TOMBaseStyles/TOMWikipedia.yaml
 
 styles:
     buildings:
