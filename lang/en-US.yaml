@@ -1,0 +1,8 @@
+locale: en
+phrases:
+    scenes:
+        TOMBuildingStructure:
+            name: Building Structure
+            group: Architecture
+            description: >
+                This maps shows the structure of buildings

@@ -1,0 +1,8 @@
+locale: nl
+phrases:
+    scenes:
+        TOMBuildingStructure:
+            name: Gebouwen Constructie
+            group: Architectuur
+            description: >
+                Deze kaart laat het constructie type van gebouwen zien.

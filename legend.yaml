@@ -1,0 +1,17 @@
+items:
+    -
+      osmkeyvalue: architecture.building_structure.values.cement_blocks
+      color: "#828282"
+    -
+      osmkeyvalue: architecture.building_structure.values.concrete_frame_and_cement_blocks
+      color: "#828282"
+      css: "border: 2px solid #000;background-color:#828282"
+    -
+      osmkeyvalue: architecture.building_structure.values.coralstone_and_lime
+      color: "#3cff7d"
+    -
+      osmkeyvalue: architecture.building_structure.values.wattle_and_daub
+      color: "#ffd061"
+    -
+      osmkeyvalue: architecture.building_structure.values.makeshift
+      color: "#ca825e"

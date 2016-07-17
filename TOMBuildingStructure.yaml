@@ -1,0 +1,62 @@
+import:
+  - ../TOMBaseStyles/TOMDark.yaml
+  - ../TOMBaseStyles/TOMArchitecturalLabels.yaml
+  - ../TOMBaseStyles/TOMSourceTZ.yaml
+
+styles:
+    buildings:
+        base: polygons
+        shaders:
+            blocks:
+                color: |
+                    color.rgb *= vec3(min((worldPosition().z*.001 + .5),1.));
+
+layers:
+    buildings:
+        data: { source: mapzen , layer: architecture}
+        wikiicon:
+            filter :
+                wikipedia: true
+            draw:
+                ui-icons-overlay:
+                    size: 16px
+                    visible: true
+                    sprite: wikipedia
+        cement_blocks:
+            filter: {"building_structure": "cement_blocks" }
+            draw:
+                polygons:
+                    color: "#BBBBBB"
+                    order: 50
+        concrete_frame_and_cement_blocks:
+            filter: {"building_structure": "concrete_frame_and_cement_blocks" }
+            draw:
+                polygons:
+                    color: "#AAAAAA"
+                lines:
+                    order: 50
+                    color: '#000'
+                    width: .5
+        coral_stone_and_lime:
+            filter: {"building_structure": "coralstone_and_lime" }
+            draw:
+                polygons:
+                    color: "#3cff7d"
+                    order: 50
+        wattle_and_daub:
+            filter: {"building_structure": "wattle_and_daub" }
+            draw:
+                polygons:
+                    color: "#ffd061"
+                    order: 50
+        makeshift:
+            filter: {"building_structure": "makeshift" }
+            draw:
+                polygons:
+                    color: "#ca825e"
+                    order: 50
+        draw:
+            polygons:
+                order: 50
+                color: '#333'
+                interactive: true
