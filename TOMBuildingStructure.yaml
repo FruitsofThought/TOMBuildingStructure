@@ -1,27 +1,12 @@
 import:
+  - ../TOMBaseStyles/TOMSourceProd.yaml
   - ../TOMBaseStyles/TOMDark.yaml
+  - ../TOMBaseStyles/TOMBuildingLayer.yaml
   - ../TOMBaseStyles/TOMArchitecturalLabels.yaml
   - ../TOMBaseStyles/TOMWikipedia.yaml
 
-styles:
-    buildings:
-        base: polygons
-        shaders:
-            blocks:
-                color: |
-                    color.rgb *= vec3(min((worldPosition().z*.001 + .5),1.));
-
 layers:
     buildings:
-        data: { source: mapzen , layer: architecture}
-        wikiicon:
-            filter :
-                wikipedia: true
-            draw:
-                ui-icons-overlay:
-                    size: 16px
-                    visible: true
-                    sprite: wikipedia
         cement_blocks:
             filter: {"building_structure": "cement_blocks" }
             draw:
@@ -55,8 +40,3 @@ layers:
                 polygons:
                     color: "#ca825e"
                     order: 50
-        draw:
-            polygons:
-                order: 50
-                color: '#333'
-                interactive: true
